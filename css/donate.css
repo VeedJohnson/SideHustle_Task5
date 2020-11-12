@@ -1,29 +1,214 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 body {
-    background: #FFFFFF;
-    font-family: 'Poppins', sans-serif;
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-image: url("/images/YCPLOGO-1\ 5.png");
+  box-shadow: 0px 4px 36px rgba(236, 236, 236, 0.24);
+  box-sizing: border-box;
+  margin: 152px 144px;
+}
+.container .logo {
+  position: absolute;
+  left: 45%;
+}
+.container h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 81px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.04em;
+  color: #00b9bc;
+  margin: 0px 198px;
+  margin-top: 15%;
+  text-align: center;
+}
+.container h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  text-align: center;
+  margin-top: 14px;
+}
+.container .left {
+  width: 50%;
+  float: left;
+}
+.container .right {
+  width: 50%;
+  float: right;
+}
+.container label {
+  display: block;
+  padding: 10px;
+  margin: 0px 198px;
+}
+.container #label-lname {
+  display: block;
+  padding: 10px;
+  margin: 0px 198px 0px 18px;
+}
+.container #fname {
+  width: 385px;
+  height: 74px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  border: 2px solid #00b9bc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 0px 198px;
+  padding: 10px;
+}
+.container #Lname {
+  width: 385px;
+  height: 74px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  border: 2px solid #00b9bc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 0px 198px 0px 18px;
+  padding: 10px;
+}
+.container .email {
+  margin-top: 15%;
+}
+.container #Email {
+  width: 800px;
+  height: 73px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  border: 2px solid #00b9bc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 0px 198px;
+  padding: 10px;
+}
+.container .last-section h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  text-align: center;
+  margin-top: 51px;
+}
+
+.container .last-section #select {
+  width: 189px;
+  height: 60px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  border: 2px solid #00b9bc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 0px 0px 0px 342px;
+  padding-left: 50px;
+}
+.container .last-section #amount {
+  width: 281px;
+  height: 60px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  border: 2px solid #00b9bc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left: 18px;
+  margin: 0px 342px 0px 18px;
+  padding: 10px;
+}
+.container #btn-donate {
+  width: 277px;
+  height: 72px;
+  background: #f9a11b;
+  border: 4px solid #f9a11b;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 164%;
+  color: #f3fae1;
+  margin: 131px 440px;
+}
+
+.top-icons {
+  position: absolute;
+  left: 8%;
+  top: 18%;
+}
+
+.bottom-icons .lower {
+  position: absolute;
+  top: 200%;
+  right: 8%;
+}
+
+.bottom-icons .upper {
+  position: absolute;
+  right: 8%;
+  top: 195%;
+}
+
+@media (max-width: 768px) {
+  /* For Tablet/Ipad phones: */
+  body {
+    background: #ffffff;
+    font-family: "Poppins";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 36px;
-    height: 100vh; 
-}
+    height: 100vh;
+  }
 
-.container{
+  .container {
     display: flex;
     justify-content: center;
-    background-image: url('/images/YCPLOGO-1\ 5.png');
-    box-shadow: 0px 4px 36px rgba(236, 236, 236, 0.24);
-    box-sizing: border-box;
-    margin: 152px 144px;
-}
-.container .logo{
-    position: absolute;
-    left: 45%;
-}
-.container h1{ 
-    font-family: 'Poppins';
+    background-image: url("/images/YCPLOGO-1\ 5.png");
+    margin: 60px;
+  }
+  .container .logo {
+    position: relative;
+    align-self: center;
+    width: 144px;
+    height: 184px;
+  }
+  .container h1 {
+    font-family: "Poppins";
     font-style: normal;
     font-weight: bold;
     font-size: 54px;
@@ -31,13 +216,11 @@ body {
     display: flex;
     align-items: center;
     letter-spacing: -0.04em;
-    color: #00B9BC;
-    margin: 0px 198px;
-    margin-top: 15%;
-    text-align: center;
-}
-.container h3{
-    font-family: 'Poppins';
+    color: #00b9bc;
+    margin: 0px 108px 0px 88px;
+  }
+  .container h3 {
+    font-family: "Poppins";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -45,440 +228,308 @@ body {
     color: #000000;
     text-align: center;
     margin-top: 14px;
-}
-.container .left{
-    width: 50%;
+  }
+  .container .left {
+    width: 100%;
     float: left;
-}
-.container .right{
-    width: 50%;
+  }
+  .container .right {
+    width: 100%;
     float: right;
-}
-.container label{
+  }
+  .container label {
     display: block;
     padding: 10px;
-    margin: 0px 198px;
-}
-.container #label-lname{
+    margin: 0px 108px;
+  }
+  .container #label-lname {
     display: block;
     padding: 10px;
-    margin: 0px 198px 0px 18px;
-}
-.container #fname{
-    width: 385px;
-    height: 74px;   
-    border: 2px solid #00B9BC;
+    margin: 0px 108px;
+  }
+
+  .container #fname {
+    width: 572px;
+    height: 96px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    border: 2px solid #00b9bc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin: 0px 198px;
+    margin: 0px 108px 0px 88px;
     padding: 10px;
-}
-.container #Lname{
-    width: 385px;
-    height: 74px;
-    border: 2px solid #00B9BC;
+  }
+  .container #Lname {
+    width: 572px;
+    height: 96px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    border: 2px solid #00b9bc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin: 0px 198px 0px 18px;
+    margin: 0px 108px 0px 88px;
     padding: 10px;
-}
-.container .email{
-    margin-top: 15%;
-}
-.container #Email{
-    width: 800px;
-    height: 73px;
-    border: 2px solid #00B9BC;
+  }
+  .container .email {
+    margin-top: 188px;
+  }
+  .container #Email {
+    width: 572px;
+    height: 96px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    border: 2px solid #00b9bc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin: 0px 198px;
-}
-.container .last-section h3{
-    font-family: 'Poppins';
+    margin: 0px 108px 0px 88px;
+    padding: 10px;
+  }
+  .container .last-section h3 {
+    font-family: "Poppins";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 36px;
     color: #000000;
     text-align: center;
-    margin-top: 51px;
-}
+    margin-top: 94px;
+  }
 
-.container .last-section #select{
-    width: 189px;
-    height: 60px;
-    font-family: 'Poppins';
+  .container .last-section #select {
+    width: 207px;
+    height: 79px;
+    font-family: "Poppins";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 36px;
     color: #000000;
-    border: 2px solid #00B9BC;
+    border: 2px solid #00b9bc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin: 0px 0px 0px 342px;
+    margin: 0px 0px 0px 88px;
     padding-left: 50px;
-}
-.container .last-section #amount{
-    width: 281px;
-    height: 60px;
-    font-family: 'Poppins';
+  }
+  .container .last-section #amount {
+    width: 338px;
+    height: 79px;
+    font-family: "Poppins";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 36px;
     color: #000000;
-    border: 2px solid #00B9BC;
+    border: 2px solid #00b9bc;
     border-radius: 4px;
     box-sizing: border-box;
     margin-left: 18px;
-    margin: 0px 342px 0px 18px;
-}
-.container #btn-donate{
+    margin: 0px 108px 0px 27px;
+    padding: 10px;
+  }
+  .container #btn-donate {
     width: 277px;
     height: 72px;
-    background: #F9A11B;
-    border: 4px solid #F9A11B;
-    font-family: 'Poppins';
+    background: #f9a11b;
+    border: 4px solid #f9a11b;
+    font-family: "Poppins";
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 164%;
-    color: #F3FAE1;
-    margin: 131px 440px;
+    color: #f3fae1;
+    margin: 96px 254px;
+  }
+
+  .top-icons {
+    opacity: 0;
+  }
+
+  .bottom-icons {
+    opacity: 0;
+  }
 }
 
-.top-icons{
-    position: absolute; 
-    left: 8%;
-    top: 18%; 
-}
+@media (min-width: 320px) and (max-width: 667px) {
+  /* For mobile phones: */
+  body {
+    background: #ffffff;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    height: 100vh;
+  }
 
-.bottom-icons .lower{
-    position: absolute;
-    top: 200%;
-    right: 8%;
-}
+  .container {
+    display: flex;
+    justify-content: center;
+    background-image: url("/images/YCPLOGO-1\ 5.png");
+    margin: 60px;
+    margin-left: 420px;
+  }
+  .container .logo {
+    position: relative;
+    align-self: center;
+    width: 144px;
+    height: 184px;
+  }
+  .container h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 81px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.04em;
+    color: #00b9bc;
+    margin: 0px 108px 0px 88px;
+  }
+  .container h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    text-align: center;
+    margin-top: 14px;
+  }
+  .container .left {
+    width: 100%;
+    float: left;
+  }
+  .container .right {
+    width: 100%;
+    float: right;
+  }
+  .container label {
+    display: block;
+    padding: 10px;
+    margin: 0px 108px;
+  }
+  .container #label-lname {
+    display: block;
+    padding: 10px;
+    margin: 0px 108px;
+  }
 
-.bottom-icons .upper{
-    position: absolute;
-    right: 8%;
-    top:195%;
-}
+  .container #fname {
+    width: 572px;
+    height: 96px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    border: 2px solid #00b9bc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0px 108px 0px 88px;
+    padding: 10px;
+  }
+  .container #Lname {
+    width: 572px;
+    height: 96px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    border: 2px solid #00b9bc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0px 108px 0px 88px;
+    padding: 10px;
+  }
+  .container .email {
+    margin-top: 138px;
+  }
+  .container #Email {
+    width: 572px;
+    height: 96px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    border: 2px solid #00b9bc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0px 108px 0px 88px;
+    padding: 10px;
+  }
+  .container .last-section h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    text-align: center;
+    margin-top: 94px;
+  }
 
-@media only screen and (max-width: 768px) {
-    /* For Tablet/Ipad phones: */
-    body {
-        background: #FFFFFF;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 36px;
-        height: 100vh; 
-    }
-    
-    .container{
-        display: flex;
-        justify-content: center;
-        background-image: url('/images/YCPLOGO-1\ 5.png');
-        margin: 60px;
-    }
-    .container .logo{
-        position: relative;
-        align-self: center;
-        width: 144px;
-        height: 184px;
-    }
-    .container h1{ 
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: bold;
-        font-size: 54px;
-        line-height: 81px;
-        display: flex;
-        align-items: center;
-        letter-spacing: -0.04em;
-        color: #00B9BC;
-        margin: 0px 108px 0px 88px;
-    }
-    .container h3{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 36px;
-        color: #000000;
-        text-align: center;
-        margin-top: 14px;
-    }
-    .container .left{
-        width: 100%;
-        float: left;
-    }
-    .container .right{
-        width: 100%;
-        float: right;
-    }
-    .container label{
-        display: block;
-        padding: 10px;
-        margin: 0px 108px;
-    }
-    .container #label-lname{
-        display: block;
-        padding: 10px;
-        margin: 0px 108px;
-    }
-    
-    .container #fname{
-        width: 572px;
-        height: 96px;
-        border: 2px solid #00B9BC;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin: 0px 108px 0px 88px;
-        padding: 10px;
-    }
-    .container #Lname{
-        width: 572px;
-        height: 96px;
-        border: 2px solid #00B9BC;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin: 0px 108px 0px 88px;
-        padding: 10px;
-    }
-    .container .email{
-        margin-top: 188px;
-    }
-    .container #Email{
-        width: 572px;
-        height: 96px;
-        border: 2px solid #00B9BC;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin: 0px 108px 0px 88px;
-    }
-    .container .last-section h3{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 36px;
-        color: #000000;
-        text-align: center;
-        margin-top: 94px;
-    }
-    
-    .container .last-section #select{
-        width: 207px;
-        height: 79px;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 36px;
-        color: #000000;
-        border: 2px solid #00B9BC;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin: 0px 0px 0px 88px;
-        padding-left: 50px;
-    }
-    .container .last-section #amount{
-        width: 338px;
-        height: 79px;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 36px;
-        color: #000000;
-        border: 2px solid #00B9BC;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin-left: 18px;
-        margin: 0px 108px 0px 27px;
-    }
-    .container #btn-donate{
-        width: 277px;
-        height: 72px;
-        background: #F9A11B;
-        border: 4px solid #F9A11B;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 164%;
-        color: #F3FAE1;
-        margin: 96px 254px;
-    }
-    
-    .top-icons{
-        opacity: 0;
-    }
-    
-    .bottom-icons {
-        opacity: 0;
-    }
-}
+  .container .last-section #select {
+    width: 207px;
+    height: 79px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    border: 2px solid #00b9bc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0px 0px 0px 88px;
+    padding-left: 50px;
+  }
+  .container .last-section #amount {
+    width: 338px;
+    height: 79px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    border: 2px solid #00b9bc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 18px;
+    margin: 0px 108px 0px 27px;
+    padding: 10px;
+  }
+  .container #btn-donate {
+    width: 277px;
+    height: 72px;
+    background: #f9a11b;
+    border: 4px solid #f9a11b;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 164%;
+    color: #f3fae1;
+    margin: 96px 254px;
+  }
 
-@media only screen and (min-device-width : 320px) and (max-device-width :  667px) {
-    /* For mobile phones: */
-    body {
-        background: #FFFFFF;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 36px;
-        height: 100vh; 
-    }
-    
-    .container{
-        display: flex;
-        justify-content: center;
-        background-image: url('/images/YCPLOGO-1\ 5.png');
-        margin: 60px;
-        margin-left: 420px;
-    }
-    .container .logo{
-        position: relative;
-        align-self: center;
-        width: 144px;
-        height: 184px;
-    }
-    .container h1{ 
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: bold;
-        font-size: 54px;
-        line-height: 81px;
-        display: flex;
-        align-items: center;
-        letter-spacing: -0.04em;
-        color: #00B9BC;
-        margin: 0px 108px 0px 88px;
-    }
-    .container h3{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 36px;
-        color: #000000;
-        text-align: center;
-        margin-top: 14px;
-    }
-    .container .left{
-        width: 100%;
-        float: left;
-    }
-    .container .right{
-        width: 100%;
-        float: right;
-    }
-    .container label{
-        display: block;
-        padding: 10px;
-        margin: 0px 108px;
-    }
-    .container #label-lname{
-        display: block;
-        padding: 10px;
-        margin: 0px 108px;
-    }
-    
-    .container #fname{
-        width: 572px;
-        height: 96px;
-        border: 2px solid #00B9BC;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin: 0px 108px 0px 88px;
-        padding: 10px;
-    }
-    .container #Lname{
-        width: 572px;
-        height: 96px;
-        border: 2px solid #00B9BC;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin: 0px 108px 0px 88px;
-        padding: 10px;
-    }
-    .container .email{
-        margin-top: 138px;
-    }
-    .container #Email{
-        width: 572px;
-        height: 96px;
-        border: 2px solid #00B9BC;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin: 0px 108px 0px 88px;
-    }
-    .container .last-section h3{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 36px;
-        color: #000000;
-        text-align: center;
-        margin-top: 94px;
-    }
-    
-    .container .last-section #select{
-        width: 207px;
-        height: 79px;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 36px;
-        color: #000000;
-        border: 2px solid #00B9BC;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin: 0px 0px 0px 88px;
-        padding-left: 50px;
-    }
-    .container .last-section #amount{
-        width: 338px;
-        height: 79px;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 36px;
-        color: #000000;
-        border: 2px solid #00B9BC;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin-left: 18px;
-        margin: 0px 108px 0px 27px;
-    }
-    .container #btn-donate{
-        width: 277px;
-        height: 72px;
-        background: #F9A11B;
-        border: 4px solid #F9A11B;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 164%;
-        color: #F3FAE1;
-        margin: 96px 254px;
-    }
-    
-    .top-icons{
-        opacity: 0;
-    }
-    
-    .bottom-icons {
-        opacity: 0;
-    }
+  .top-icons {
+    opacity: 0;
+  }
+
+  .bottom-icons {
+    opacity: 0;
+  }
 }
