@@ -338,6 +338,9 @@ a:hover {
 .nav-pills .show > .nav-link:active {
   text-transform: uppercase;
 }
+.news-span:first-child {
+  padding-right: 10px;
+}
 
 @media screen and (max-width: 1025px) {
   .heading {
@@ -366,7 +369,7 @@ a:hover {
     /* justify-content: space-between;  */
     max-width: 90%;
     margin: 0 auto;
-    margin-top: -13px;
+    /* margin-top: -13px; */
   }
 
   .tabs ul li {
