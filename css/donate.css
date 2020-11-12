@@ -67,6 +67,11 @@ body {
 .container #fname {
   width: 385px;
   height: 74px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
   border: 2px solid #00b9bc;
   border-radius: 4px;
   box-sizing: border-box;
@@ -76,6 +81,11 @@ body {
 .container #Lname {
   width: 385px;
   height: 74px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
   border: 2px solid #00b9bc;
   border-radius: 4px;
   box-sizing: border-box;
@@ -88,10 +98,16 @@ body {
 .container #Email {
   width: 800px;
   height: 73px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
   border: 2px solid #00b9bc;
   border-radius: 4px;
   box-sizing: border-box;
   margin: 0px 198px;
+  padding: 10px;
 }
 .container .last-section h3 {
   font-family: "Poppins";
@@ -133,6 +149,7 @@ body {
   box-sizing: border-box;
   margin-left: 18px;
   margin: 0px 342px 0px 18px;
+  padding: 10px;
 }
 .container #btn-donate {
   width: 277px;
@@ -234,6 +251,11 @@ body {
   .container #fname {
     width: 572px;
     height: 96px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
     border: 2px solid #00b9bc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -243,6 +265,11 @@ body {
   .container #Lname {
     width: 572px;
     height: 96px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
     border: 2px solid #00b9bc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -255,10 +282,16 @@ body {
   .container #Email {
     width: 572px;
     height: 96px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
     border: 2px solid #00b9bc;
     border-radius: 4px;
     box-sizing: border-box;
     margin: 0px 108px 0px 88px;
+    padding: 10px;
   }
   .container .last-section h3 {
     font-family: "Poppins";
@@ -300,6 +333,7 @@ body {
     box-sizing: border-box;
     margin-left: 18px;
     margin: 0px 108px 0px 27px;
+    padding: 10px;
   }
   .container #btn-donate {
     width: 277px;
@@ -393,6 +427,11 @@ body {
   .container #fname {
     width: 572px;
     height: 96px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
     border: 2px solid #00b9bc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -402,6 +441,11 @@ body {
   .container #Lname {
     width: 572px;
     height: 96px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
     border: 2px solid #00b9bc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -414,10 +458,16 @@ body {
   .container #Email {
     width: 572px;
     height: 96px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
     border: 2px solid #00b9bc;
     border-radius: 4px;
     box-sizing: border-box;
     margin: 0px 108px 0px 88px;
+    padding: 10px;
   }
   .container .last-section h3 {
     font-family: "Poppins";
@@ -459,6 +509,7 @@ body {
     box-sizing: border-box;
     margin-left: 18px;
     margin: 0px 108px 0px 27px;
+    padding: 10px;
   }
   .container #btn-donate {
     width: 277px;
