@@ -183,7 +183,7 @@ body {
   top: 195%;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   /* For Tablet/Ipad phones: */
   body {
     background: #ffffff;
