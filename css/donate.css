@@ -182,7 +182,7 @@ body {
   right: 8%;
   top: 195%;
 }
-/* 
+
 @media (max-width: 768px) {
   /* For Tablet/Ipad phones: */
   body {
@@ -357,7 +357,7 @@ body {
     opacity: 0;
   }
 }
- */
+
 @media (min-width: 320px) and (max-width: 667px) {
   /* For mobile phones: */
   body {
