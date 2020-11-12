@@ -4,15 +4,15 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-html {
+html, body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Poppins", Open Sans;
   text-rendering: optimizeLegibility;
   background: #fff;
-  overflow-x: hidden;
 }
 
 /* *HEADER AND FOOTER STYLING */
