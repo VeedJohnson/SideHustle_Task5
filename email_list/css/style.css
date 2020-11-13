@@ -1,0 +1,1428 @@
+*, *::before, *::after{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+	width: 1rem;
+}
+
+body::-webkit-scrollbar-track{
+	background: #eee;
+}
+
+body::-webkit-scrollbar-thumb{
+	background: #00b9bc;
+}
+
+.container-fluid{
+	width: 100vw;
+	height: 100vh;
+	padding: 0;
+}
+
+.mainContainer{
+	width: 100%;
+	height: 100vh;
+}
+
+/* Side Nav Section */
+
+.navigation{
+	flex: 0 0 15%;
+	background-color: #00b9bc;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	transition: all 2s ease-out;
+}
+
+.sideNav{
+	width: 100%;
+	height: 100vh;	
+}
+
+.navigationCheckbox{
+	display: none;
+}
+
+
+.logoContainer{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	height: 20rem;
+}
+
+.logoContainer img{
+	width: 15rem;
+}
+
+.userContainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 4rem;
+}
+
+.imageContainer{
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+	background-image: url(../img/port.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: .5rem;
+}
+
+.typo{
+	color: #fff;
+}
+
+.typo h2{
+	font-size: 2rem;
+	margin-bottom: .5rem;
+}
+
+.typo p{
+	font-size: 1.5rem;
+}
+
+.navButtons{
+	font-size: 1.5rem;
+	width: 100%;
+}
+
+.navList{
+	list-style: none;
+}
+
+.navLink:link:hover{
+	text-decoration: none;
+}
+
+.linkText{
+	font-size: 2rem;
+	margin-right: 1.5rem;
+	text-decoration: none;
+}
+
+.navLink{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	text-decoration: none;
+	margin-bottom: 1rem;
+	background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+	background-size: 220%;
+	transition: all .4s;
+}
+
+.navLink:hover, .navLink:active{
+	background-position: 100%;
+	color: #f9a11b;
+}
+
+.active{
+	background-color: #fff;
+}
+
+.textColor{
+	color: #f9a11b;
+}
+/* End Side Nav Section */
+
+/* Extra Small Screen */
+
+@media only screen and (max-width: 600px){
+	.container-fluid{
+		height: 200vh;
+		width: 100%;
+	}
+	.mainContainer{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 10vh;
+	}
+
+	.navigation{
+		background-color: transparent;
+		width: 100vw;
+		height: 10vh;
+		padding: 3rem 0 0 2rem;
+	}
+
+	.arrowIcon{
+		display: none;
+	}
+
+	.logoContainer{
+		display: block;
+		width: 100%;
+		height: 10vh;
+		position: relative;
+
+	}
+
+	.logoContainer img{
+		width: 10rem;
+		position: absolute;
+		left: 0;
+		top: -16%;
+	}
+
+	.userContainer{
+		position: absolute;
+		top: 10%;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 10;
+		opacity: 0;
+		width: 0;
+		transition: all .8s;
+	}
+
+	.userContainer .imageContainer{
+		width: 10rem;
+		height: 10rem;
+	}
+
+	.userContainer .typo h2{
+		font-size: 3rem;
+	}
+
+	.userContainer .typo p{
+		font-size: 2rem;
+	}
+
+	.navButtons{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 10;
+		font-size: 1.8rem;
+		opacity: 0;
+		width: 0;
+		transition: all .5s;
+		opacity: 0;
+		width: 0;
+	}
+
+	.navigation{
+		display: block;
+		width: 100%;
+	}
+
+	.navigationButton{
+		width: 6rem;
+		height: 6rem;
+		position: absolute;
+		top: 3rem;
+		right: 5.5%;
+		z-index: 10;
+		border-radius: 50%;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	.navBackground{
+		width: 3rem;
+		height: 3rem;
+		position: fixed;
+		top: 3%;
+		right: 8%;
+		background-color: transparent;
+		z-index: 5;
+		transition: transform .8s;
+		border-radius: 50%;
+	}
+
+	.navigationIcon{
+		position: relative;
+		margin-top: 3rem;
+	}	
+
+	.navigationIcon, 
+	.navigationIcon::after, 
+	.navigationIcon::before{
+		width: 2.5rem;
+		height: 3.5px;
+		background-color: #00b9bc;
+		display: inline-block;
+	}
+
+	.navigationIcon::after, 
+	.navigationIcon::before{
+		content: "";
+		position: absolute;
+		right:  0;
+		transition: all .5s;
+	}
+
+	.navigationIcon::after{ top: 1rem; width: 1.5rem; }
+
+	.navigationIcon::before{ top: -1rem; }
+
+		.navigationCheckbox{
+		display: none;
+	}
+
+	.navigationCheckbox:checked + .navigationButton .navigationIcon{
+		background-color: transparent;
+	}
+
+	.navigationCheckbox:checked + .navigationButton .navigationIcon::before{
+		background-color: #fff;
+		transform: rotate(45deg);
+		top: 0;
+	}
+
+	.navigationCheckbox:checked + .navigationButton .navigationIcon::after{
+		background-color: #fff;
+		width: 2.5rem;
+		transform: rotate(-45deg);
+		top: 0;
+	}
+
+	.navigationCheckbox:checked ~ .navBackground{
+		background-image: linear-gradient(to right bottom, #00b9bc, #037c7e);
+		transform: scale(80);
+	}
+
+	.navigationCheckbox:checked ~ .sideNav .navButtons{
+		opacity: 1;
+		width: 100%;
+	}
+
+	.navigationCheckbox:checked ~ .sideNav .userContainer{
+		opacity: 1;
+		width: 100%;
+	}
+
+	.navigationCheckbox:checked ~ .userContainer{
+		opacity: 1;
+		width: 100%;
+	}
+}
+
+/* Small Screen */
+
+@media only screen and (min-width: 600px){
+	.container-fluid{
+		height: 200vh;
+		width: 100%;
+	}
+	.mainContainer{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 10vh;
+	}
+
+	.navigation{
+		background-color: transparent;
+		width: 100vw;
+		height: 10vh;
+		padding: 3rem 0 0 2rem;
+	}
+
+	.logoContainer{
+		display: block;
+		width: 100%;
+		height: 10vh;
+		position: relative;
+
+	}
+
+	.logoContainer img{
+		width: 10rem;
+		position: absolute;
+		left: 0;
+		top: -16%;
+	}
+
+	.userContainer{
+		position: absolute;
+		top: 10%;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 10;
+		opacity: 0;
+		width: 0;
+		transition: all .8s;
+	}
+
+	.userContainer .imageContainer{
+		width: 10rem;
+		height: 10rem;
+	}
+
+	.userContainer .typo h2{
+		font-size: 3rem;
+	}
+
+	.userContainer .typo p{
+		font-size: 2rem;
+	}
+
+	.navButtons{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 10;
+		font-size: 1.8rem;
+		opacity: 0;
+		width: 0;
+		transition: all .5s;
+	}
+
+	.navigation{
+		display: block;
+		width: 100%;
+	}
+
+	.navigationButton{
+		width: 6rem;
+		height: 6rem;
+		position: absolute;
+		top: 3rem;
+		right: 5.5%;
+		z-index: 10;
+		border-radius: 50%;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	.navBackground{
+		width: 3rem;
+		height: 3rem;
+		position: fixed;
+		top: 3%;
+		right: 8%;
+		background-color: transparent;
+		z-index: 5;
+		transition: transform .8s;
+		border-radius: 50%;
+	}
+
+	.navigationIcon{
+		position: relative;
+		margin-top: 3rem;
+	}	
+
+	.navigationIcon, 
+	.navigationIcon::after, 
+	.navigationIcon::before{
+		width: 2.5rem;
+		height: 3.5px;
+		background-color: #00b9bc;
+		display: inline-block;
+	}
+
+	.navigationIcon::after, 
+	.navigationIcon::before{
+		content: "";
+		position: absolute;
+		right:  0;
+		transition: all .5s;
+	}
+
+	.navigationIcon::after{ top: 1rem; width: 1.5rem; }
+
+	.navigationIcon::before{ top: -1rem; }
+
+		.navigationCheckbox{
+		display: none;
+	}
+
+	.navigationCheckbox:checked + .navigationButton .navigationIcon{
+		background-color: transparent;
+	}
+
+	.navigationCheckbox:checked + .navigationButton .navigationIcon::before{
+		background-color: #fff;
+		transform: rotate(45deg);
+		top: 0;
+	}
+
+	.navigationCheckbox:checked + .navigationButton .navigationIcon::after{
+		background-color: #fff;
+		width: 2.5rem;
+		transform: rotate(-45deg);
+		top: 0;
+	}
+
+	.navigationCheckbox:checked ~ .navBackground{
+		background-image: linear-gradient(to right bottom, #00b9bc, #037c7e);
+		transform: scale(80);
+	}
+
+	.navigationCheckbox:checked ~ .sideNav .navButtons{
+		opacity: 1;
+		width: 100%;
+	}
+
+	.navigationCheckbox:checked ~ .sideNav .userContainer{
+		opacity: 1;
+		width: 100%;
+	}
+
+}
+
+/* Medium Screen */
+
+@media only screen and (min-width: 768px){
+
+	body{
+		overflow: hidden;
+	}
+
+	.mainContainer{
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.navigation{
+		display: flex;
+		flex: 0 0 15%;
+		background-color: #00b9bc;
+		height: 100vh;
+		position: relative;
+	}
+
+	.sideNav{
+		flex: 0 0 13%
+		height: 100%;
+		display: flex;
+		flex-direction: column;	
+	}
+	
+	.navigationCheckbox{
+		display: none;
+	}
+
+	.navigationButton{
+		display: none;
+	}
+
+	.navigationIcon{
+		display: none;
+	}
+
+	.navigationBackground{
+		display: none;
+	}
+	
+	
+	
+	.logoContainer{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	height: 15rem;
+	position: absolute;
+	top: 3%;
+	left: 15%;
+	}
+
+	.logoContainer img{
+	width: 10rem;
+	}
+
+	.userContainer{
+		position: absolute;
+		top: 25%;
+		opacity: 1;
+		width: 100%;
+		transition: all .8s;
+	}
+
+	.userContainer .imageContainer{
+		width: 5rem;
+		height: 5rem;
+	}
+
+	.userContainer .typo h2{
+		font-size: 1.5rem;
+	}
+
+	.userContainer .typo p{
+		font-size: 1.2rem;
+	}
+
+	.navButtons{
+		position: absolute;
+		top: 50%;
+		opacity: 1;
+		width: 100%;
+		transition: all .5s;
+		font-size: 1.2rem;
+	}
+
+	.navButtons .navLink .linkText{
+		font-size: 1.2rem;
+		text-decoration: none;
+	}
+
+}
+
+/* Large Screen */
+
+@media only screen and (min-width: 992px){
+
+	body{
+		overflow: hidden;
+	}
+	
+	.mainContainer{
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.navigation{
+		display: flex;
+		flex: 0 0 15%;
+		background-color: #00b9bc;
+		height: 100vh;
+		position: relative;
+	}
+
+	.sideNav{
+		flex: 0 0 13%
+		height: 100%;
+		display: flex;
+		flex-direction: column;	
+	}
+	
+	.navigationCheckbox{
+		display: none;
+	}
+
+	.navigationButton{
+		display: none;
+	}
+
+	.navigationIcon{
+		display: none;
+	}
+
+	.navigationBackground{
+		display: none;
+	}
+	
+	.logoContainer{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	height: 20rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	}
+
+	.logoContainer img{
+	width: 15rem;
+	}
+
+
+	.userContainer{
+		position: absolute;
+		top: 25%;
+		opacity: 1;
+		width: 100%;
+		transition: all .8s;
+	}
+
+	.userContainer .imageContainer{
+		width: 8rem;
+		height: 8rem;
+	}
+
+	.userContainer .typo h2{
+		font-size: 1.7rem;
+	}
+
+	.userContainer .typo p{
+		font-size: 1.4rem;
+	}
+
+	.navButtons{
+		position: absolute;
+		top: 50%;
+		opacity: 1;
+		width: 100%;
+		transition: all .5s;
+		font-size: 1.5rem;
+	}
+
+	.navButtons .navLink .linkText{
+		font-size: 1.7rem;
+		text-decoration: none;
+	}
+
+}
+
+/* Large Screen */
+
+@media only screen and (min-width: 992px){
+
+	body{
+		overflow: hidden;
+	}
+	
+	.mainContainer{
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.navigation{
+		display: flex;
+		flex: 0 0 15%;
+		background-color: #00b9bc;
+		height: 100vh;
+		position: relative;
+	}
+
+	.sideNav{
+		flex: 0 0 13%
+		height: 100%;
+		display: flex;
+		flex-direction: column;	
+	}
+	
+	.navigationCheckbox{
+		display: none;
+	}
+
+	.navigationButton{
+		display: none;
+	}
+
+	.navigationIcon{
+		display: none;
+	}
+
+	.navigationBackground{
+		display: none;
+	}
+	
+	.logoContainer{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	height: 20rem;
+	position: absolute;
+	top: 0;
+	left: 15%;
+	}
+
+	.logoContainer img{
+	width: 15rem;
+	}
+
+
+	.userContainer{
+		position: absolute;
+		top: 25%;
+		opacity: 1;
+		width: 100%;
+		transition: all .8s;
+	}
+
+	.userContainer .imageContainer{
+		width: 8rem;
+		height: 8rem;
+	}
+
+	.userContainer .typo h2{
+		font-size: 1.7rem;
+	}
+
+	.userContainer .typo p{
+		font-size: 1.4rem;
+	}
+
+	.navButtons{
+		position: absolute;
+		top: 50%;
+		opacity: 1;
+		width: 100%;
+		transition: all .5s;
+		font-size: 1.5rem;
+	}
+
+	.navButtons .navLink .linkText{
+		font-size: 1.7rem;
+		text-decoration: none;
+	}
+
+}
+
+/* Extra Large Screen */
+
+@media only screen and (min-width: 1200px){
+
+	body{
+		overflow: hidden;
+	}
+	
+	.mainContainer{
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.navigation{
+		display: flex;
+		flex: 0 0 15%;
+		background-color: #00b9bc;
+		height: 100vh;
+		position: relative;
+	}
+
+	.sideNav{
+		flex: 0 0 13%
+		height: 100%;
+		display: flex;
+		flex-direction: column;	
+	}
+	
+	.navigationCheckbox{
+		display: none;
+	}
+
+	.navigationButton{
+		display: none;
+	}
+
+	.navigationIcon{
+		display: none;
+	}
+
+	.navigationBackground{
+		display: none;
+	}
+	
+	.logoContainer{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	height: 20rem;
+	position: absolute;
+	top: 0;
+	left: 15%;
+	}
+
+	.logoContainer img{
+	width: 15rem;
+	}
+
+
+	.userContainer{
+		position: absolute;
+		top: 25%;
+		opacity: 1;
+		width: 100%;
+		transition: all .8s;
+	}
+
+	.userContainer .imageContainer{
+		width: 10rem;
+		height: 10rem;
+	}
+
+	.userContainer .typo h2{
+		font-size: 2.3rem;
+	}
+
+	.userContainer .typo p{
+		font-size: 1.7rem;
+	}
+
+	.navButtons{
+		position: absolute;
+		top: 60%;
+		opacity: 1;
+		width: 100%;
+		transition: all .5s;
+		font-size: 1.8rem;
+	}
+
+	.navButtons .navLink .linkText{
+		font-size: 2rem;
+		text-decoration: none;
+	}
+
+}
+
+
+/* Main Section */
+
+.mainContent{
+	flex: 1;
+	background-color: #fff;
+	padding: 5rem;
+	height: auto;
+}
+
+.header{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1.5rem;
+	color: #00b9bc;
+}
+
+.btn:link, .btn:visited{
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 5px;
+    width: 10rem;
+    display: inline-block;
+    background-color: #f9a11b;
+    color: #fff;
+    transition: all 0.3s ease-out;
+    outline: none;
+    border: none;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.btn:focus{
+    outline: none;
+    border: none;
+}
+
+.campaignList{
+	font-size: 1.8rem;
+}
+
+.cardContainer{
+	height: 30vh;
+	margin-bottom: 5rem;
+	width: 50%;
+}
+
+.columnOne{
+	width: 50%;
+	border: none;
+}
+
+.columnOne:active, .columnOne:focus{
+	outline: none;
+}
+
+.card1{
+	perspective: 150rem;
+	-moz-perspective: 150rem;	
+	width: 100%;
+	position: relative;
+	height: 30vh;
+}
+
+.cardSide1{
+	height: 30vh;
+	width: 100%;
+	background-color: #00b9bc;
+	transition: all .8s ease;
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+}
+
+.front{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #00b9bc;
+	border-radius: 3px;
+	padding: 1.5rem 1rem .5rem 1rem;
+	color: #fff;
+}
+
+.back{
+	background-image: linear-gradient(to right bottom, #00b9bc, #037c7e);
+	transform: rotateY(180deg);
+}
+
+.card1:hover .front{
+	transform: rotateY(180deg);
+}
+
+.card1:hover .back{
+	transform: rotateY(0);
+}
+
+.cardHeader .imageBox{
+	opacity: 0.4;
+	width: 4rem;
+	height: 4rem;	
+}
+
+.cardHeader .imageBox img{
+	width: 4rem;
+}
+
+.cardTotal{
+	font-size: 4rem;
+	font-weight: 700;
+	color: #f9a11b;
+	text-align: left;
+}
+
+.chartOne{
+	display: flex;
+	font-size: 1.5rem;
+}
+
+.chartOne span{
+	color: #f9a11b;
+	margin: 0 5px;
+}
+
+#Red{
+	color: red;
+}
+
+.back{
+	position: relative;
+}
+
+.back p{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	color: #eee;
+	transform: translateX(-50%);
+}
+
+.btnBack:link, .btnBack:visited{
+	position: absolute;
+	text-decoration: none;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 1rem 2rem;
+	background-image: linear-gradient(to right bottom, #00b9bc, #037c7e);
+	box-shadow: 0 1rem 2rem rgba(0,0,0,.5);
+	border-radius: 5rem;
+	transition: all .3s ease;
+}
+
+.btnBack:hover{
+	transform: translateY(-3px);
+	box-shadow: 0 1rem 2rem rgba(0,0,0,.5);
+}
+
+.btnBack:active{
+	transform: translateY(-1px);
+	box-shadow: 0 1rem 2rem rgba(0,0,0,.3);
+}
+
+/* End Card */
+
+/* Extra Small Screen */
+
+@media only screen and (max-width: 600px){
+	.mainContent{
+		width: 100vw;
+		height: auto;
+		padding-top: 8rem;
+	}
+
+	.header{
+		justify-content: flex-start;
+		margin-top: 3rem;
+	}
+
+	.header h2{
+		font-size: 3rem;
+	}
+
+	.btn:link{
+		display: none;
+	}
+
+	.cardContainer{
+		flex-direction: row;
+		justify-content: space-between;
+		height: 30vh;
+		margin-bottom: 5rem;
+		width: 100%;
+	}
+
+	.columnOne{
+		width: 100%;
+	}
+}
+
+/* Small Screen */
+
+@media only screen and (min-width: 600px){
+	.mainContent{
+		width: 100vw;
+		height: auto;
+		padding-top: 8rem;
+	}
+
+	.header{
+		justify-content: flex-start;
+		margin-top: 3rem;
+	}
+
+	.header h2{
+		font-size: 3rem;
+	}
+
+	.btn:link{
+		display: none;
+	}
+
+	.cardContainer{
+		flex-direction: row;
+		justify-content: space-between;
+		height: 30vh;
+		margin-bottom: 5rem;
+		width: 100%;
+	}
+
+	.columnOne{
+		width: 100%;
+	}
+}
+
+/* Medium Screen */
+
+@media only screen and (min-width: 768px){
+	.mainContent{
+		flex: 1;
+		height: auto;
+		padding-top: 5rem;
+	}
+
+	.header{
+		justify-content: space-between;
+	}
+
+	.header h2{
+		font-size: 2.5rem;
+	}
+
+	.btn:link{
+		display: block;
+	}
+
+	.cardContainer{
+		flex-direction: row;
+		justify-content: space-between;
+		height: 30vh;
+		margin-bottom: 5rem;
+		width: 100%;
+	}
+
+	.columnOne{
+		width: 60%;
+	}
+
+	.cardHeader{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.cardHeader h2{
+		font-size: 1.1rem;
+	}	
+
+	.cardTotal{
+	font-size: 2rem;
+	}
+
+	.chartOne{
+	display: flex;
+	font-size: 1.2rem;
+	}
+
+}
+
+/* Large Screen */
+
+@media only screen and (min-width: 992px){
+	.mainContent{
+		flex: 1;
+		height: auto;
+		padding-top: 3rem;
+	}
+
+	.header{
+		justify-content: space-between;
+	}
+
+	.header h2{
+		font-size: 2.5rem;
+	}
+
+	.btn:link{
+		display: block;
+	}
+
+	.cardContainer{
+		flex-direction: row;
+		justify-content: space-between;
+		height: 30vh;
+		margin-bottom: 5rem;
+		width: 100%;
+	}
+
+	.columnOne{
+		width: 60%;
+	}
+
+	.cardHeader{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.cardHeader h2{
+		font-size: 1.4rem;
+	}	
+
+	.cardTotal{
+	font-size: 3.5rem;
+	}
+
+	.chartOne{
+	display: flex;
+	font-size: 1.4rem;
+	}
+
+}
+
+/* Extra Large Screen */
+
+@media only screen and (min-width: 1200px){
+	.mainContent{
+		flex: 1;
+		height: auto;
+		padding-top: 3rem;
+	}
+
+	.header{
+		justify-content: space-between;
+	}
+
+	.header h2{
+		font-size: 2.5rem;
+	}
+
+	.btn:link{
+		display: block;
+	}
+
+	.cardContainer{
+		flex-direction: row;
+		justify-content: space-between;
+		height: 30vh;
+		width: 100%;
+	}
+
+	.columnOne{
+		width: 60%;
+	}
+
+	.cardHeader{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.cardHeader h2{
+		font-size: 2rem;
+	}	
+
+	.cardTotal{
+	font-size: 4rem;
+	}
+
+	.chartOne{
+	display: flex;
+	font-size: 1.4rem;
+	}
+
+}
+
+
+/*Email*/
+
+.emailList{
+	width: 100%;
+}
+
+.emailTypo{
+	display: flex;
+	flex-direction: row;
+}
+
+.emailTypo{
+	font-size: 1.5rem;
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 1rem;
+}
+
+.tableHeader{
+	font-size: 1.7rem;
+	color: #fff;
+	background-color: #00b9bc;
+	border-radius: 3px;
+}
+
+thead{
+	margin-bottom: 2rem;
+}
+
+.tableData{
+	background-color: #eee;
+	color: #000;
+	font-size: 1.5rem;
+}
+
+/* Extra Small Screen */
+
+@media only screen and (max-width: 600px){
+	.emailList{
+		display: flex;
+		flex-direction: column;	
+	}
+
+	.emailTypo{
+		display: none;
+	}
+
+	.campaignList{
+		font-size: 1.4rem;
+	}
+
+	.tableHeader{
+		font-size: 1.5rem;
+	}
+
+	.tableData{
+		font-size: 1.3rem;
+	}
+
+}
+
+/* Small Screen */
+
+@media only screen and (min-width: 600px){
+
+	.emailTypo{
+		display: none;
+	}
+
+	.campaignList{
+		font-size: 1.4rem;
+	}
+
+	.tableHeader{
+		font-size: 1.5rem;
+	}
+
+	.tableData{
+		font-size: 1.3rem;
+	}
+
+}
+
+/* Medium Screen */
+
+@media only screen and (min-width: 768px){
+
+	.emailTypo{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.emailTypo h2{
+		 color: #00b9bc;
+		 text-transform: uppercase;
+	}
+
+	.smallTypo span{
+		font-size: 1.3rem;
+	}
+
+	.smallTypo .num{
+		font-size: 1.4rem
+	}
+
+	.tableHeader{
+		font-size: 1.5rem;
+	}
+
+	.tableData{
+		font-size: 1.3rem;
+	}
+
+}
+
+/* Large Screen */
+
+@media only screen and (min-width: 992px){
+
+	.emailTypo{
+		flex-direction: column;
+	}
+
+	.emailTypo {
+		 color: #0000;
+		 text-transform: uppercase;
+	}
+
+	.tableHeader{
+		font-size: 1.6rem;
+	}
+
+	.tableData{
+		font-size: 1.5rem;
+	}
+
+}
+
+
+/* End Main Section */
