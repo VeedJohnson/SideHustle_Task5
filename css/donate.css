@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
 body {
   overflow-x: hidden;
   background: #ffffff;
@@ -246,9 +245,8 @@ body {
 
 @media screen and (max-width: 768px) {
   /* For Tablet/Ipad phones: */
-  body{
+  html{
     overflow-x: hidden;
-    overflow-y: scroll;
   }
   .container {
     display: flex;
@@ -272,7 +270,7 @@ body {
     align-items: center;
     letter-spacing: -0.04em;
     color: #00b9bc;
-    margin: 2% 8%;
+    margin: 2% 10%;
   }
 
   .container .left {
@@ -286,20 +284,20 @@ body {
   .container label {
     display: block;
     padding: 10px;
-    margin: 0% 12%;
+    margin: 0% 18%;
   }
   .container #label-lname {
     display: block;
     padding: 10px;
-    margin: 0% 12%;
+    margin: 0% 18%;
   }
   .container #label-Email {
     display: block;
     padding: 10px;
-    margin: 0% 12%;
+    margin: 0% 18%;
   }
   .container #fname {
-    width: 76%;
+    width: 64%;
     height: 96px;
     font-family: "Poppins";
     font-style: normal;
@@ -309,11 +307,11 @@ body {
     border: 2px solid #00b9bc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin: 0% 12%;
+    margin: 0% 18%;
     padding: 10px;
   }
   .container #Lname {
-    width: 76%;
+    width: 64%;
     height: 96px;
     font-family: "Poppins";
     font-style: normal;
@@ -323,14 +321,14 @@ body {
     border: 2px solid #00b9bc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin: 0% 12%;
+    margin: 0% 18%;
     padding: 10px;
   }
   .container .email {
     margin-top: 15%;
   }
   .container #Email {
-    width: 76%;
+    width: 64%;
     height: 96px;
     font-family: "Poppins";
     font-style: normal;
@@ -340,7 +338,7 @@ body {
     border: 2px solid #00b9bc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin: 0% 12%;
+    margin: 0% 18%;
     padding: 10px;
   }
   .container .last-section h3 {
@@ -410,9 +408,10 @@ body {
 
 @media screen and (max-width: 480px) {
   /* For mobile phones: */
+  html{
+    overflow: hidden;
+  }
   body {
-    overflow-x: hidden;
-    overflow-y: scroll;
     background: #ffffff;
     font-family: "Poppins";
     font-style: normal;
@@ -553,6 +552,189 @@ body {
   }
   .container .last-section #amount {
     width: 24%;
+    height: 79px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    border: 2px solid #00b9bc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 18px;
+    margin: 0% 28% 0% 2%;
+    padding: 10px;
+  }
+  .container #btn-donate {
+    width: 277px;
+    height: 72px;
+    background: #f9a11b;
+    border: 4px solid #f9a11b;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 164%;
+    color: #f3fae1;
+    margin: 96px 254px;
+  }
+
+  .top-icons {
+    opacity: 0;
+  }
+
+  .bottom-icons {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* For small width mobile phones: (280px -320px) */
+  html{
+    overflow: hidden;
+  }
+  body {
+    background: #ffffff;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    height: 100vh;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    background-image: url("/images/YCPLOGO-1\ 5.png");
+    margin: 60px;
+  }
+  .container .logo {
+    position: relative;
+    align-self: center;
+    width: 144px;
+    height: 184px;
+    left: 40%;
+  }
+  .container h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 81px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.04em;
+    color: #00b9bc;
+    margin: 2% 36%;
+  }
+  .container h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    text-align: center;
+    margin: 2% 36%;
+  }
+  .container .left {
+    width: 100%;
+    float: left;
+  }
+  .container .right {
+    width: 100%;
+    float: right;
+  }
+  .container label {
+    display: block;
+    padding: 10px;
+    margin: 0% 34%;
+  }
+  .container #label-lname {
+    display: block;
+    padding: 10px;
+    margin: 0% 34%;
+  }
+  .container #label-Email {
+    display: block;
+    padding: 10px;
+    margin: 0% 34%;
+  }
+  .container #fname {
+    width: 32%;
+    height: 96px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    border: 2px solid #00b9bc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0% 34%;
+    padding: 10px;
+  }
+  .container #Lname {
+    width: 32%;
+    height: 96px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    border: 2px solid #00b9bc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0% 34%;
+    padding: 10px;
+  }
+  .container .email {
+    margin-top: 15%;
+  }
+  .container #Email {
+    width: 32%;
+    height: 96px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    border: 2px solid #00b9bc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0% 34%;
+    padding: 10px;
+  }
+  .container .last-section h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    text-align: center;
+    margin-top: 10%;
+  }
+
+  .container .last-section #select {
+    width: 12%;
+    height: 79px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    border: 2px solid #00b9bc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0% 0% 0% 34%;
+    padding-left: 10px;
+  }
+  .container .last-section #amount {
+    width: 18%;
     height: 79px;
     font-family: "Poppins";
     font-style: normal;
