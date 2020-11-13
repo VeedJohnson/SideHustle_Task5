@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 body {
+  overflow-x: hidden;
   background: #ffffff;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -83,6 +84,10 @@ body {
   margin: 0% 32%;
   padding: 10px;
 }
+.container #fname:hover {
+  transform: scale(1.05);
+  transition: all 300ms ease-in-out;
+}
 .container #Lname {
   width: 385px;
   height: 74px;
@@ -96,6 +101,10 @@ body {
   box-sizing: border-box;
   margin: 0% 2%;
   padding: 10px;
+}
+.container #Lname:hover {
+  transform: scale(1.05);
+  transition: all 300ms ease-in-out;
 }
 .container .email {
   margin-top: 15%;
@@ -113,6 +122,10 @@ body {
   box-sizing: border-box;
   margin: 0px 16%;
   padding: 10px;
+}
+.container #Email:hover {
+  transform: scale(1.05);
+  transition: all 300ms ease-in-out;
 }
 .container .last-section h3 {
   font-family: "Poppins";
@@ -140,6 +153,10 @@ body {
   margin: 0% 0% 0% 28%;
   padding-left: 50px;
 }
+.container .last-section #select:hover {
+  transform: scale(1.05);
+  transition: all 300ms ease-in-out;
+}
 .container .last-section #amount {
   width: 281px;
   height: 60px;
@@ -155,6 +172,10 @@ body {
   margin: 0% 28% 0% 2%;
   padding: 10px;
 }
+.container .last-section #amount:hover {
+  transform: scale(1.05);
+  transition: all 300ms ease-in-out;
+}
 .container #btn-donate {
   width: 277px;
   height: 72px;
@@ -168,27 +189,67 @@ body {
   color: #f3fae1;
   margin: 131px 440px;
 }
+.container #btn-donate:hover {
+  transform: scale(1.05);
+  color: #ffffff;
+  background-color: #00b9bc;
+  border: 4px solid #00b9bc;
+  transition: all 300ms ease-in-out;
+}
 
 .top-icons {
   position: absolute;
   left: 8%;
   top: 18%;
+  transition: transform 1s;
 }
-
-.bottom-icons .lower {
+.top-icons:hover {
+  transform: rotate(180deg);
+}
+.bottom-icons{
   position: absolute;
   top: 200%;
   right: 8%;
+  transition: transform 1s;
 }
-
-.bottom-icons .upper {
-  position: absolute;
-  right: 8%;
-  top: 195%;
+.bottom-icons:hover {
+  transform: rotate(180deg);
+} 
+@keyframes animate-top {
+  0%   {color:#00b9bc; left:0px; top:0px;}
+  25%  {color:#00b9bc; left:1050px; top:0px;}
+  50%  {color:#f9a11b; left:1050px; top:1198px;}
+  75%  {color:#f9a11b; left:0px; top:1198px;}
+  100% {color:#00b9bc; left:0px; top:0px;}
+}
+.top-icons .iconify{
+  animation-name: animate-top;
+  position: relative;
+  animation-duration: 5s;
+  /* animation-delay: 5s; */
+  animation-timing-function: ease-in-out;
+}
+@keyframes animate-bottom {
+  0%   {color:#00b9bc; right:0px; bottom:0px;}
+  25%  {color:#00b9bc; right:1050px; bottom:0px;}
+  50%  {color:#f9a11b; right:1050px; bottom:1198px;}
+  75%  {color:#f9a11b; right:0px; bottom:1198px;}
+  100% {color:#00b9bc; right:0px; bottom:0px;}
+}
+.bottom-icons .iconify{
+  animation-name: animate-bottom;
+  position: relative;
+  animation-duration: 5s;
+  /* animation-direction: reverse; */
+  animation-timing-function: ease-in-out;
 }
 
 @media screen and (max-width: 768px) {
   /* For Tablet/Ipad phones: */
+  body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
   .container {
     display: flex;
     justify-content: center;
@@ -350,6 +411,8 @@ body {
 @media screen and (max-width: 480px) {
   /* For mobile phones: */
   body {
+    overflow-x: hidden;
+    overflow-y: scroll;
     background: #ffffff;
     font-family: "Poppins";
     font-style: normal;
@@ -364,7 +427,6 @@ body {
     justify-content: center;
     background-image: url("/images/YCPLOGO-1\ 5.png");
     margin: 60px;
-    /* align-content: center; */
   }
   .container .logo {
     position: relative;
@@ -502,7 +564,7 @@ body {
     border-radius: 4px;
     box-sizing: border-box;
     margin-left: 18px;
-    margin: 0px 28% 0px 2%;
+    margin: 0% 28% 0% 2%;
     padding: 10px;
   }
   .container #btn-donate {
