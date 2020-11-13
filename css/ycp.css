@@ -7,7 +7,8 @@
   --dark: #444444;
 }
 
-html,body {
+html,
+body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -35,7 +36,6 @@ li {
   text-decoration: none;
   color: inherit;
 }
-
 
 nav {
   display: flex;
@@ -699,13 +699,12 @@ main {
     padding: 0 40px 0 50px;
   }
   footer {
-      padding: 20px 20px 20px 30px;
+    padding: 20px 20px 20px 30px;
   }
 }
 
-
 @media (max-width: 920px) {
-  .menu-btn{
+  .menu-btn {
     display: unset;
   }
   nav .menu-btn i {
@@ -738,7 +737,7 @@ main {
     font-size: 17px;
     color: #444444;
     transition: all 200ms ease-in-out;
-}
+  }
   .link {
     width: 100%;
     margin: 20px 0;
@@ -768,56 +767,57 @@ main {
     flex-direction: column;
   }
 
-  .container-2{
-      order: 1;
+  .container-2 {
+    order: 1;
   }
   .container-2 .info {
-      display: none;
+    display: none;
   }
-  .container-1{
-      order: 2;
-      align-items: center;
-      justify-content: center;
-      margin-top: 50px;
+  .container-1 {
+    order: 2;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
   }
   .container-3 {
-      display: block;
-      order: 3;
-      text-align: center;
-      color: #fff;
+    display: block;
+    order: 3;
+    text-align: center;
+    color: #fff;
   }
 
   .footnote {
-      order: 4;
-      text-align: center;
-      font-size: 10px;
-      margin-top: 10px;
+    order: 4;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 10px;
   }
-
-@media (max-width:425px){
+}
+@media (max-width: 425px) {
   .logo-area img {
-      margin-right: 0;
+    margin-right: 0;
   }
   .submit input:nth-of-type(1) {
-      height: 40px;
-      width: 75%;
+    height: 40px;
+    width: 75%;
   }
   .submit input:nth-of-type(2) {
-      margin-left: -10px;
-      font-size: 12px;
-      height: 40px;
+    margin-left: -10px;
+    font-size: 12px;
+    height: 40px;
   }
-  
-  .sub-container-1 li a, .info p {
-      font-size: 10px;
+
+  .sub-container-1 li a,
+  .info p {
+    font-size: 10px;
   }
   .sub-container-1 {
-      margin: 0 10px;
+    margin: 0 10px;
   }
   .sub-container-1 h3 {
     font-size: 12px;
   }
   .subscribe p {
-      font-size: 15px;
+    font-size: 15px;
   }
 }
